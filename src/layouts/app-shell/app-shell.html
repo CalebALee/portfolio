@@ -1,0 +1,18 @@
+    <a class="skip-link" href="#main-content">Skip to content</a>
+
+    @if (chromeVisible()) {
+      <app-site-header />
+    }
+
+    <main
+      id="main-content"
+      class="main"
+      tabindex="-1"
+      [class.main--with-chrome]="chromeVisible()"
+    >
+      <router-outlet />
+    </main>
+
+    @if (chromeVisible()) {
+      <app-site-footer />
+    }

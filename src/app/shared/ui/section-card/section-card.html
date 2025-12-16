@@ -1,0 +1,13 @@
+<section
+  class="card"
+  [id]="sectionId()"
+  [attr.aria-labelledby]="titleId()"
+  [class.card--full-height]="fullHeight()"
+>
+  <div class="card__inner">
+    <h2 class="card__title" [id]="titleId()">{{ title() }}</h2>
+    <div class="card__content">
+      <ng-content />
+    </div>
+  </div>
+</section>

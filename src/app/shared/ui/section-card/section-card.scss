@@ -1,0 +1,29 @@
+.card {
+  scroll-margin-top: var(--header-height, 72px);
+  max-width: 1100px;
+  margin: 0 auto;
+  border-radius: 32px;
+  background: #fff;
+  color: #111;
+  padding: clamp(1.5rem, 4vw, 4rem);
+}
+
+.card--full-height {
+  min-height: calc(100dvh - var(--header-height, 72px));
+  display: flex;
+  align-items: center;
+}
+
+.card__inner {
+  width: 100%;
+}
+
+.card__title {
+  margin: 0 0 1rem;
+}
+
+.card__content:empty::before {
+  content: " ";
+  display: block;
+  min-height: 1px;
+}

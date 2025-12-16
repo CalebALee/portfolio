@@ -9,24 +9,6 @@
   min-height: 100dvh;
 }
 
-/* When the fixed header is visible, push content below it */
 .main--with-chrome {
   padding-top: var(--header-height, 72px);
-}
-
-/* Skip link: AXE-friendly */
-.skip-link {
-  position: fixed;
-  top: 0.75rem;
-  left: 0.75rem;
-  z-index: 1000;
-  padding: 0.5rem 0.75rem;
-  background: #fff;
-  color: #000;
-  border-radius: 0.5rem;
-  transform: translateY(-200%);
-}
-
-.skip-link:focus-visible {
-  transform: translateY(0);
 }
